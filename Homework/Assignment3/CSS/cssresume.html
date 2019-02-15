@@ -1,21 +1,11 @@
 <HTML>
   <head>
-    a:link, a:visited{
-    color: green;
-    text-decoration:none
-    text-font:10px;
-    }
-
-
-    a:hover, a:active{
-      background-color: hotpink;
-      padding:10px 14px
-    }
-
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
  <meta name="description" content="resume">
  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
  <meta name="author" content="Yayue">
+
+ <link rel="stylesheet" type="text/css" href="style.css"/>
 
 <!--Title starts here-->
     <title>
@@ -24,7 +14,7 @@
   </head>
 
 <!--Body starts here-->
-  <body style="background-color:rgb(230, 242, 255);">
+  <body>
   <center>
      <H1>
        Yayue Zheng
@@ -36,22 +26,23 @@
 
 
 
-  <h1 style="background-color:rgb(204, 230, 255);">
+  <h1>
     <i>Personal Info</i>
   </h1>
+  <div class="selfintro">
   <p style="font-size:120%;">I am studying in the University of Miami, majoring in Interactive Media. I can speak two languages, Chinese as first and English as second. I was studying business in China but now I delve into a different filed, the communication.I am good at organizing and planning, which helps me form good habits in the life and the work.</p>
+</div>
 
 
-
-     <h1 style="background-color:rgb(204, 230, 255);">
+     <h1>
        <i>a photograph of myself</i>
      </h1>
 
-       <img src="image/pic.JPG" width="290" height="290">
+       <img src="pic.JPG" width="290" height="290">
 
 
 
-      <h1 style="background-color:rgb(204, 230, 255);">
+      <h1>
         <i>My Shares</i>
       </h1>
 
@@ -60,7 +51,7 @@
 
 
 
-      <h1 style="background-color:rgb(204, 230, 255);">
+      <h1>
       <i> Hobby </i>
     </h1>
 
@@ -73,43 +64,46 @@
 
 
 
-   <h1 style="background-color:rgb(204, 230, 255);">
+   <h1>
      <i>Working Experience</i>
    </h1>
    <ul style="font-size:120%;">
-     <li>Working for SuNing Company in China  (2016.3-2016.5)</li>
-     <li>Working for Tecent Company in China  (2016.7-2016.8)</li>
-     <li>Working for AliBaBa Company in China (2016.9-2016.12)</li>
+     <li id="w1">Working for SuNing Company in China  (2016.3-2016.5)</li>
+     <li id="w2">Working for Tecent Company in China  (2016.7-2016.8)</li>
+     <li id="w3">Working for AliBaBa Company in China (2016.9-2016.12)</li>
     </ul>
-   <h2 style="background-color:rgb(204, 230, 255);">
+   <h2>
      <i>Experience Comment</I>
    </h2>
-   <p style="font-size:120%">
+   <div class="com"><p style="font-size:120%">
      The experiences are generally short but meaningful. Three companys are all reputable companys which concentracting on doing online business. During my internship there, I gain a lot of useful skills, like interpersonal communication skills, emergency processing skills, intercultural analysis skills and so forth. I believe all of these skills help me develop a better and deeper insight when I study
-   </P>
+   </P></div>
 
 
 
-        <h1 style="background-color:rgb(204, 230, 255);">
+        <h1>
           <i>Education Experience Summary(Recent Years)</i>
         </h1>
-      <table border="10" width="90%">
-       <TR>
-         <TH>School Name</TH>
+      <table id="customers" border="10" width="90%">
+      <TR>
+        <TH >School Name</TH>
          <TH>Time</TH>
          <TH>Major</TH>
        </TR>
-       <TR>
+
+
+       <TR id="China">
         <TD> Nanjing Normal University </TD>
          <TD>  2015.9-2018.6 </TD>
          <TD>  Business </TD>
        </TR>
-       <TR>
+
+       <TR id="miami">
          <TD>University of Miami</TD>
          <TD>2019.2-</TD>
          <TD> Interactive Media</TD>
        </TR>
-       <TR>
+       <TR id="China">
          <TD>Nanjing Arts College</TD>
          <TD>2014.9-2015.7</TD>
          <TD> Morden Music</TD>
