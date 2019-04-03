@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<html>
+<head>
+ <title>
+  Recipe Everyday
+ </title>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script>
+
+
+ $(document).ready(function(){
+   $("h1").on({
+     mouseenter: function(){
+       $(this).css("background-color", "yellow");
+     },
+     mouseleave: function(){
+       $(this).css("background-color", "lightblue");
+     },
+ });
+ });
+
+ $(document).ready(function(){
+  $("h1").click(function(){
+    $(this).hide();
+  });
+});
+
+ $(document).ready(function(){
+  $("img").dblclick(function(){
+    $(this).hide();
+  });
+});
+
+ $(document).ready(function(){
+   $("#flip").click(function(){
+     $("#panel").slideToggle("slow");
+   });
+ });
+
+ $(document).ready(function(){
+   $("button").click(function(){
+     $("#p1").toggle();
+   });
+ });
+
+ $(document).ready(function(){
+   $("#hide").click(function(){
+     $(".steps").show();
+   });
+   $("#show").click(function(){
+     $(".steps").hide();
+   });
+   });
+
+</script>
+
+ <style>
+ #panel, #flip {
+   padding: 5px;
+   text-align: center;
+   background-color: #e5eecc;
+   border: solid 1px #c3c3c3;
+ }
+
+ #panel {
+   padding: 5px;
+   display: none;
+ }
+
+ button{
+   padding: 10px;
+   background-color: yellow;
+ }
+ </style>
+
+
+
+</head>
+
+<body>
+  <h1>Sweet Chile Roasted Salmon </h1>
+  <img src="img/2.jpg" alt="Key Lime Cheesecake" width="400" height="370">
+
+  <h2> Do You Wanna Start Cooking Sweet Chile Roasted Salmon?</h2>
+
+
+  <button> Hide Introduction</button>
+
+
+  <p id="p1">
+    For your next holiday meal, we highly recommend giving the ham a break and picking up a side of salmon instead. Whether you are serving it for a special occasion or a casual weeknight meal, this perfectly tender roasted salmon is impressive in every possible way. In fact, this recipe is standing proof of how easy it can be to achieve a wow-worthy main course without much effort. The big flavor of this Thai-inspired salmon comes from a spicy (but not too spicy)-sweet glaze featuring sambal oelek, honey, and lemongrass. If you have trouble finding fresh lemongrass, you can substitute a bit of lemongrass paste or simply omit it.
+  </p>
+
+
+  <h3> Ingredients </h3>
+
+  <div id="flip">Show Ingredients<br>Hide Ingredients</div>
+  <div id="panel"> <ul>
+    <li >(2 1/2- to 3-lb.) side skin-on salmon, pin-bones removed </li>
+    <li >1/4 cup fresh cilantro, chopped </li>
+    <li >2 tablespoons Asian chile-garlic sauce or sambal oelek (ground fresh chile paste) </li>
+    <li >2 tablespoons soy sauce </li>
+    <li > 2 tablespoons fresh lime juice plus 1 Tbsp. lime zest(from 1 lime) </li>
+    <li > 1 tablespoon fish sauce </li>
+    <li > 1 tablespoon grated fresh ginger </li>
+    <li > 1 cup water </li>
+    <li > Sliced scallions, lime wedges, and red chiles, foe garnish </li>
+  </ul>
+</div>
+
+
+<h3> How to Make It </h3>
+<button id="hide">Show Steps</button>
+<button id="show">Hide Steps</button>
+
+<div class="steps">
+<p > Step 1
+Preheat your oven to 400°F. Line a baking sheet with aluminum foil. Place salmon on prepared baking sheet.
+</p>
+
+<p >
+Step 2
+Whisk together cilantro, honey, chile-garlic sauce, soy sauce, lime juice, zest, rice vinegar, fish sauce, ginger, and lemongrass in a small bowl.
+</p>
+
+<p> Step 3
+Spoon three-fourths of the sauce over salmon. Cover loosely with plastic wrap, and marinate in refrigerator at least 30 minutes and up to an hour. Add water to baking sheet (not on salmon).
+</p>
+
+<p>
+Step 4
+Bake salmon in preheated oven until a knife or fork is easily inserted into the thickest portion, 20 to 25 minutes. Serve immediately with remaining sauce, and top with garnishes.
+</p></div>
+
+<h3> How is your experience with us today? </h3>
+
+<button type="button" onclick="alert('Congratulations!')"> I Made It!</button>
+<button type="button" onclick="alert('Sure! We will have more recipe for you.')"> I Need More</button>
+
+
+</html>
