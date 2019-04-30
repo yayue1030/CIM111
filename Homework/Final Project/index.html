@@ -1,0 +1,565 @@
+<html>
+<head>
+  <title>Deco Interior Design Company</title>
+
+<style>
+
+
+#news:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 22px;
+ font-family:times new roamn;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#0f0f0f;
+}
+
+li {
+
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 48px 30px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  padding:56px;
+
+  background-color: #c2c3c4;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c2c3c4;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;
+padding: 25px;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.6}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+@media only screen and (max-width: 800px) {
+  #navimg {display:none}
+  ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 15px;
+   font-family:Ariel;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+
+  li {
+
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover, .dropdown:hover .dropbtn {
+    padding:15px;
+    background-color: #c2c3c4;
+  }
+
+  li.dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c2c3c4;
+    min-width: 100px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1;
+  padding: 5px 9px;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  #full{display:none;}
+
+h1{font-size: 20px;}
+
+.footer{
+  height:30%;
+}
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  #work{width: 100px; height:130px;
+margin:{ 10px 0px;}
+}
+#news:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  }
+#news{
+  width:240;
+  height: 170;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0px;
+  background-color: white;
+  padding: 3px;
+  margin:0;
+}
+
+#trophy{
+  width:105; height:105;
+}
+.grid-container > div {
+  background-color: white;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 86%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+#list2{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: white;
+}
+
+#l2{
+  margin: 10px 5px 15px 90px;
+
+}
+
+.icon{
+  padding: 30px;
+  margin: 10px 180px;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: geay;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.footer{
+  background-color:#161616;
+}
+
+#footerp{
+  color:white;
+}
+
+
+#email:link {
+  color: #72b6db;
+}
+
+/* visited link */
+#email:visited {
+  color: green;
+}
+
+/* mouse over link */
+#email:hover {
+  color: #b6dbef;
+}
+
+/* selected link */
+#email:active {
+  color: blue;
+}
+
+
+#footerimg:hover {
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+</style>
+
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</head>
+
+
+<body>
+<ul>
+  <li w3-blue id="navimg"><img src="logo.jpg" alt="logo of company" height="120" width="200" ></img></li>
+  <li id="nn"><a href="file:///Users/yayue/Desktop/CIM111/Homework/Final%20Project/index.html">Home</a></li>
+  <li><a href="file:///Users/yayue/Desktop/CIM111/Homework/Final%20Project/news.html">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Media</a>
+    <div class="dropdown-content">
+      <a href="#more pro">View Porofolio</a>
+      <a href="#mg">Get Inspired</a>
+
+      <li id="nn"><a href="file:///Users/yayue/Desktop/CIM111/Homework/Final%20Project/ourteams.html">Our Teams</a></li>
+</ul>
+
+<br><br>
+<center><h1>FROM INSPIRATION TO REALITY</h1></center>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+
+  <img src="07.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="08.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+
+  <img src="10.jpg" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+<br><br>
+<center><h1 id="mg">Media&Gallery</h1><center>
+
+<ul id="list2">
+  <li id="l2">
+<div class="container">
+  <img src="livingroom.jpg"  class="image">
+  <div class="overlay">Living Room </div>
+</div>
+</li>
+
+<li id="l2">
+<div class="container">
+  <img src="diningroom.jpg" class="image">
+  <div class="overlay">Dinning Room </div>
+</div>
+</li>
+
+
+<li id="l2">
+<div class="container">
+  <img src="bedroom.jpg" class="image">
+  <div class="overlay">Bedroom</div>
+</div>
+</li>
+
+<li id="l2">
+<div class="container">
+  <img src="bath.jpg" class="image">
+  <div class="overlay">Bathroom </div>
+</div>
+</li>
+
+<li id="l2">
+<div class="container">
+  <img src="entertainment.jpg" class="image">
+  <div class="overlay">Home Entertainment Room</div>
+</div>
+</li>
+
+<li id="l2">
+<div class="container">
+  <img src="outdoorspace.jpg"  class="image">
+  <div class="overlay">Outdoor Space </div>
+</div>
+</li>
+
+<li id="l2">
+<div class="container">
+  <img src="children.jpg"  class="image">
+  <div class="overlay">Children Room </div>
+</div>
+</li>
+
+<li id="l2">
+<div class="container">
+  <img src="homeoffice.jpg"  class="image">
+  <div class="overlay">Home Office </div>
+</div>
+</li>
+</ul>
+
+<br><br>
+<center><h1>How We Work</h1><center>
+<div class="icon">
+<a data-fancybox="gallery" href="Screen Shot 2019-04-18 at 7.18.18 PM.jpg"><img id="work" src="ss1.jpg" width="260" height="270" ></a>
+
+
+
+
+<a data-fancybox="gallery" href="Screen Shot 2019-04-18 at 7.18.31 PM.jpg"><img id="work"src="ss2.jpg" width="260" height="270" ></a>
+
+
+
+<a data-fancybox="gallery" href="004.jpg"><img id="work"src="ss3.jpg" width="260" height="270" ></a>
+
+
+
+<a data-fancybox="gallery" href="Screen Shot 2019-04-18 at 7.19.10 PM.jpg"><img id="work"src="ss4.jpg" width="260" height="270" "></a>
+
+</div>
+
+
+<img id="full" src="full.jpg" width="85%" hspace="105px"></img>
+<br><br>
+<img id="img12" src="full2.jpg" width="85%" hspace="105px"></img>
+
+
+<br><br><br>
+<h1 id="more pro">More Portfolio from us</h1>
+<img id="news"src="01.jpg"  width="400" height="300">
+<img id="news"src="02.jpg"  width="400" height="300">
+<img id="news"src="03.jpg"  width="400" height="300">
+<img id="news"src="12.jpg"  width="400" height="300">
+<img id="news"src="13.jpg"  width="400" height="300">
+<img id="news"src="14.jpg"  width="400" height="300">
+
+
+<br><br><br>
+<h1 id="whyus">Why Us</h1>
+<div class="grid-container">
+
+  <div><img id="trophy" src="2015.jpg"></div>
+  <div><img id="trophy" src="2016.jpg"></div>
+  <div><img id="trophy" src="2017.jpg"></div>
+  <div><img id="trophy" src="2019.jpg"></div>
+</div>
+
+
+<div class="footer">
+<footer>
+<br>
+  <p id="footerp">Follow Us</p>
+  <img id="footerimg" src="facebook.jpg" width="30" height="30"></img>
+    <img id="footerimg" src="twitter.jpg" width="30" height="30"></img>
+      <img id="footerimg" src="ins.jpg" width="30"  height="30"></img>
+
+<br><br>
+      <p id="footerp">Contact Us</p>
+   <p id="footerp">Contact information: <a id="email" href="mailto:yxz1386@miami.edu">yxz1386@miami.edu</a>.</p>
+
+  </footer>
+</div>
+
+</body>
+</html>
